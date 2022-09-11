@@ -3,21 +3,30 @@
   }
 
   body, header, h1, nav, main, footer {
-    padding: 2rem;
+    padding: 1em;
   }
 
-  .title-summary, h2, ul, li, details, p, button, select {
-    padding: 1rem;
+  h2, ul, li, details, p, button, select {
+    padding: 0.65em;
   }
 
   summary, p {
     margin-left: 1em;
   }
 
-  header > summary {
+  header > p {
     margin-left: 0;
   }
-  
+
+  main > ul {
+    margin-left: 1em;
+  }
+
+  section > p:last-child,
+  ol > li:last-child {
+    padding-bottom: 2em;
+  }
+
   body {
     box-sizing: border-box;
     font-family: "Arial";
@@ -72,7 +81,7 @@
     width: 100%;
     min-height: 8vh;
     background-color: paleturquoise;
-}
+  }
 
   a {
     text-decoration: none;
@@ -88,17 +97,20 @@
     background-color: orange;
   }
 
-  main > ul {
-    margin-left: 1rem;
+  section {
+    line-height: 1.15em;
   }
 
   code {
-    display: block;
     white-space: pre-wrap;
     font-size: 0.8em;
     color: wheat;
     background-color: black;
   }
+
+  .block-code {
+    display: block;
+}
 
   section {
     background-color: lemonchiffon;
@@ -107,7 +119,11 @@
   h2 {
     background-color: peachpuff;
   }
-  
+
+  #template-space {
+    display: block;
+    background-color: gainsboro;
+  }
 
   progress[value] {
     -webkit-appearance: none;
@@ -128,12 +144,8 @@
 
   @media only screen and (max-width: 950px) {
 
-    body, header, h1, nav, main, footer {
-        padding: 1rem;
-      }
-
     h2, .title-summary, ul, li {
-        padding: 0.5rem;
+        padding: 0.5em;
       }
 
     .nav_main {
