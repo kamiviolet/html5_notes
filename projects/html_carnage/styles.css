@@ -59,6 +59,7 @@
   
   nav {
     background-color: cadetblue;
+    border-right: 15px solid darkred;
   }
   
   nav > ul {
