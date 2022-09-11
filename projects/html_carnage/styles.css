@@ -1,0 +1,157 @@
+:root {
+    font-size: 20px;
+  }
+
+  body, header, h1, nav, main, footer {
+    padding: 2rem;
+  }
+
+  .title-summary, h2, ul, li, details, p, button, select {
+    padding: 1rem;
+  }
+
+  summary, p {
+    margin-left: 1em;
+  }
+
+  header > summary {
+    margin-left: 0;
+  }
+  
+  body {
+    box-sizing: border-box;
+    font-family: "Arial";
+    background-color: midnightblue;
+  }
+  
+  header {
+    background-color: lightcyan;
+  }
+  
+  h1,
+  .title-summary,
+  nav > ul,
+  footer {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 0;
+    background-color: steelblue;
+  }
+  
+  .title-summary {
+    background-color: powderblue;
+  }
+
+  .nav_main {
+    display: flex;
+  }
+  
+  nav {
+    background-color: cadetblue;
+  }
+  
+  nav > ul {
+    list-style-type: none;
+    width: 20vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: mediumaquamarine;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    }
+  
+  nav > ul > * {
+    padding: 0;
+    width: 100%;
+    min-height: 8vh;
+    background-color: paleturquoise;
+}
+
+  a {
+    text-decoration: none;
+  }
+
+  nav > ul > a:hover,
+  nav > ul > a:active {
+    transition: 0.2s;
+    background-color: orange;
+  }
+
+  main {
+    background-color: orange;
+  }
+
+  main > ul {
+    margin-left: 1rem;
+  }
+
+  code {
+    display: block;
+    white-space: pre-wrap;
+    font-size: 0.8em;
+    color: wheat;
+    background-color: black;
+  }
+
+  section {
+    background-color: lemonchiffon;
+  }
+  
+  h2 {
+    background-color: peachpuff;
+  }
+  
+
+  progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    
+    width: 50vw;
+    height: 30px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin-top: 1em;
+  }
+
+  footer {
+    background-color: palevioletred;
+  }
+
+
+  @media only screen and (max-width: 950px) {
+
+    body, header, h1, nav, main, footer {
+        padding: 1rem;
+      }
+
+    h2, .title-summary, ul, li {
+        padding: 0.5rem;
+      }
+
+    .nav_main {
+        flex-direction: column;
+    }
+     
+      nav {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        background-color: cadetblue;
+      }
+
+      nav > ul {
+        flex-direction: row;
+        min-height: 10vh;
+        width: 100%;
+    }
+
+
+}

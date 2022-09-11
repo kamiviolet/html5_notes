@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"> 
+    <title>HTML5 carnage</title>
+</head>
+
+<!--
+questions
+
+-->
+
+<body>
+
+<header>
+  <h1>HTML5 Practice</h1>
+  <summary class="title-summary">For a newbie like me who wishes for a more sophisticated writing<br />and a more solid foundation in coding</summary>
+</header>
+
+<div class="layout nav_main">
+<nav>
+  <ul>
+    <a href="#advantage"><li>Reasons for <wbr />better HTML</li></a>
+    <a href="#useful-tricks"><li>Useful Tricks</li></a>
+    <a href="#semantic-tags"><li>Semantic Tags</li></a>
+    <a href="#useful-tags"><li>Other <wbr />Useful Tags</li></a>
+  </ul>
+</nav>
+  
+<main>
+
+  <section id="advantage" class="advantage">
+    <h2>Reasons for cultivating your HTML skills</h2>
+      <details>
+        <summary>Such question is to serve as a reminder for myself, so that I would not rush in learning while not having my founcation established solidily. To answer this question, we need to know what is considered good in HTML and among all, writing semantic HTML is very important.<br /><br />There are several reasons as below:</summary>
+        <ul>
+          <li>It makes your code easier to understand.</li>
+          <li>It makes the source code more readable for others.</li>
+          <li>Browsers can interpret your code better and therefore boosts the SEO (Search Engine Optimization), resulted in higher accessibility.</li>
+        </ul>
+      </details>
+      </section>
+
+  <section id="useful-tricks" class="useful-tags">
+    <h2>Tricks/Good Practices when writing HTML</h2>
+      <ol>
+        <li>Avoid abusing &#60;div&#62; and &#60;span&#62;. There are tons of alternative with built-in features provided by HTML5 (we will cover that more in other parts on this page).</li>
+        <li>Be discreet when giving name to the class/ID for elements, be specific. (this is difficult for me.. i am never good in naming).</li>
+        <li>Use lowercase for elements, attributes and also values, for better readability and consistency.</li>
+        <li>Use labels for bars/options in the form.</li>
+        <li>Add alt (Alternative Text Attribute) on images/links as fallback.</li>
+        <li>Use &#60;h1&#62; only once per page.</li>
+      </ol>
+  </section>
+
+  <section id="semantic-tags" class="semantic-tags">
+    <h2>Semantic Tags</h2>
+    <p>When creating a brief layout, the following tags can be used:</p>
+    <code>&#60;header&#62;</code>
+    <code>&#60;footer&#62;</code>
+    <code>&#60;article&#62;</code>
+    <code>&#60;nav&#62;</code>
+    <code>&#60;aside&#62;</code>
+    <code>&#60;section&#62;</code>
+    <code>&#60;details&#62;</code>
+    <code>&#60;summary&#62;</code>
+
+    <p>Then, there are some other sematic tags for various types of text/media(image/audio/video) elements:</p>
+    <code>&#60;em&#62;</code>
+    <code>&#60;strong&#62;</code>
+    <code>&#60;s&#62;</code>
+    <code>&#60;q&#62;</code>
+    <code>&#60;blockquote&#62;</code>
+    <code>&#60;figure&#62;</code>
+    <code>&#60;figcaption&#62;</code>
+    <code>&#60;audio&#62;</code>
+    <code>&#60;video&#62;</code>
+    <code>&#60;source&#62;</code>
+    <code>&#60;track&#62;</code>
+  </section>
+  
+  <section id="useful-tags" class="useful-tags">
+    <h2>Other Useful Tags</h2>
+    <code>&#60;time&#62;</code>
+
+    <code>&#60;map&#62;</code>
+      <p>For using a single image but mapping to different links. can be useful.</p>
+      <code>
+        &#60;img src="./asakusa_done.svg" alt="Asakusa Shrine - Kaminarimon (Thunder Gate)" usemap="#kaminarimon" width="400" height="379"&#62;
+        &#60;map name="workmap"&#62;
+        &#60;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&#62;
+        &#60;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"&#62;
+        &#60;/map&#62;
+      </code>
+      <p>First add attribute "usemap" and assign an unique ID to the image. then, using &#60;map name={usemap}&#62; to wrap all &#60;area&#62;. Followed with the above, inside &#60;area&#62; set the attributes, the basic ones will be: shape, coords, href and alt.
+      <p>Try to click the temple below with its roof, the lantern in the middle and the building on the right side:</p>
+      <img
+        src="https://kamiviolet.github.io/exercises/proj-omikuji/images/asakusa_done.svg"
+        alt="Kaminarimon"
+        usemap="#kaminarimon"
+        width="650px" height="350px">
+      <map name="kaminarimon">
+        <area shape="rect" coords="100,50,550,130" href="#" target="_blank" alt="roof?"/>
+        <area shape="rect" coords="400,150,470,280" href="#" target="_blank" alt="right side door?"/>
+        <area shape="circle" coords="280,220,40" href="#" target="_blank" alt="lantern?" />
+      </map>
+      
+    <code>&#60;template&#62;</code>
+      <p>For elements (which are likely to be reuseable) not be rendered when the browser just loaded the webpage, ie default display: "hidden".</p>
+      <p>Needs to add js snippet like below for display.</p>
+      <code>
+        //first, declare (1)the template element (2)where the template is going to be appended, 
+        //and (3)the switch/button to fire such event
+        const tempSpace = document.querySelector("#template-space");
+        const template = document.querySelector("#template");
+        const button = document.querySelector(".template-btn");
+      
+        //function
+        button.addEventListener("click", () => {
+        let clone = template.content.cloneNode(true);
+        tempSpace.append(clone);
+        })
+      </code>
+      <button class="template-btn1">
+        Try me
+      </button>
+      <p id="template-space">
+        Line to be appended by template. (An extra template will be added everytime the button is clicked.)
+        <br />
+      </p>
+      <template class="template template1"><em>Hello. I am the template element.<br /></em></template>
+      <p>Otherwise, it can be fired by onclick in html. The below is another example (the template will be appended to the above):</p>
+      <button class="template-btn2" onclick="display()">
+        Show hidden content
+      </button>
+      <template class="template template2"><mark>Hiya. I am template 2 element.<br /></mark></template>
+
+    <code>
+      &#60;select&#62;
+      &#60;option value=""&#62;&#60;/option&#62;
+      &#60;/select&#62;
+    </code>
+      <select>
+        <option value="option-1">Option I</option>
+        <option value="option-2">Option II</option>
+        <option value="option-2">Option III</option>
+      </select>
+    
+    <code>&#60;progress&#62;&#60;/progress&#62;</code>
+      <p>For better practice, one should add label for the progress bar, same as using &#60;label&#62; for every item inside &#60;fieldset&#62; when creating form.</p>
+      <p>Needs to coordinate with JS for proper function.</p>
+      <p>It is to show the progress, literally. One may choose to use &#60;meter&#62; when representing scalar measurement within a known range, for example disk usage. It is also called as a gauge.
+      <label for="demo">Progress for the demo of HTML5 tags:</label>
+        <br />
+      <progress value="20" max="100">20%</progress>
+  </section>
+
+  </main>
+  </div>
+
+  <footer>
+    <small>For better writing, please get devoted to study :D</small>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
