@@ -102,4 +102,8 @@ th {
     .tag-category > ul {
         padding-right: 1em;
     }
+
+    main {
+        width: 100vw;
+    }
     }
