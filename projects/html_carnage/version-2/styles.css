@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.25em;
+    font-size: 1.2em;
+}
+
+header, footer {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+header, footer {
+    padding: 2em;
+}
+
+header {
+    background-color: beige;
+}
+
+main > * {
+    margin: 0;
+    padding: 1.25em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: azure;
+}
+
+main {
+    width: 70vw;
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+details {
+    background-color: lavender;
+}
+
+summary {
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+ol > li {
+    padding-bottom: 1em;
+}
+
+details > * {
+    padding: 0.75em;
+}
+
+h2 {
+    line-height: 1.5em;
+    background-color: lavenderblush;
+}
+
+footer {
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-category-wrapper {
+    display: flex;
+}
+
+.tag-category > ul {
+    padding-right: 5em;
+}
+
+/* Table Element*/
+table {
+    min-width: 50vw;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+}
+
+th, td {
+    border: black 1px solid;
+}
+
+th {
+    background-color: gainsboro;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        display: block;
+    }
+
+    .tag-category > ul {
+        padding-right: 1em;
+    }
+    
+    }

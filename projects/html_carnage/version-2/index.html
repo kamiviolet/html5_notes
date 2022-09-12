@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Scene of Carnage for HTML (ver 2)</title>
+</head>
+<body>
+    <header id="top">
+        <h1>HTML/HTML5 Practice</h1>
+        <p>Leeeeeet's "Practice makes Perfect"!</p>
+    </header>
+    <nav>
+        <ul>
+            <a href="#overview"><li>Overview of HTML</li></a>
+            <a href="#reasons"><li>Reasons for clearer HTML</li></a>
+            <a href="#good-practices"><li>Good practices for HTML</li></a>
+            <a href="#taglist"><li>HTML Tags</li></a>
+            <a href="#"><li>More thoughts on HTML Tags</li></a>
+            <a href="#"><li>HTML attributes</li></a>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 id="overview">What is HTML and HTML5? - Overview of HTML</h2>
+            <section>
+                <article>
+                    <p><strong>HTML</strong> stands for "Hypertext Markup Language", a language for creating webpages. The current version of HTML is HTML5 which was release in 2014 (the older version was HTML4.1, which was in practice since 1999) and there is ongoing adjustment and changing along the development of the internet.</p>
+                    <p>By "marking up" various parts with tags, HTML describes the structure of a webpage and tells User Agents (UAs) - most typical example is a browser, how to render/display the content. Tags define HTML elements and each of them may associate with certain attributes, which some specific whereas some global.</p>
+                </article>
+                <a href="#top">^ Back to the top</a>
+            </section>
+
+        <h2 id="reasons">Reasons for clearer HTML</h2>
+            <section>
+                <p>Before heading to the reasons for writing HTML in a clear and semantic manner, it is crucial to know <em>SEO</em>.</p>
+                <details>
+                    <summary>What is SEO?</summary>
+                    <p><strong>SEO</strong> stands for Search Engine Optimization.</p>
+                </details>
+                <br />
+                <details>
+                    <summary>Why is SEO important for a web developer?</summary>
+                    <p>This can help archieve better ranking in the search engine therefore boost the popularity of the webpage.</p>
+                </details>
+            <a href="#top">^ Back to the top</a>
+            </section>
+
+        <h2 id="good-practices">How to write clearer HTML? (Good practices for HTML)</h2>
+            <section>
+                <ol>
+                    <li>Avoid abusing &#60;div&#62; and &#60;span&#62;.<br /><br />There are tons of alternative with built-in features provided by HTML5 (we will cover that more in other parts on this page).</li>
+                    <li>Be discreet when giving name to the class/ID for elements, be specific (avoid using numbering as class name, ie picture1-6 but picture-left/picture-center). </li>
+                    <li>Have a more compound class attribute with a string of generic classes which could be reuseable - like the way Bootstrap is.</li>
+                    <li>Use lowercase for elements, attributes and also values, for better readability and consistency.</li>
+                    <li>Use labels for labelable elements for better machine readability.</li>
+                    <li>Always think of the possibilities of incompatibility and prepare alternative ways as fall-back.</li>
+                    <li>Use &#60;h1&#62; only once per page.</li>
+                </ol>
+            <a href="#top">^ Back to the top</a>
+            </section>
+
+        <h2 id="taglist">HTML Tags</h2>
+            <p>The elements/tags can be grouped into the categories as below:</p>
+            <div class="tag-category-wrapper">
+                <div class="tag-category structural-category">
+                    <p>Strutural Category</p>
+                    <ul>
+                        <li>Main Root</li>
+                        <li>Document Metadata</li>
+                        <li>Sectioning Root</li>
+                        <li>Content Sectioning</li>
+                        <li>Text Content</li>
+                        <li>Inline Text Semantics</li>
+                        <li>Images and Multimedia</li>
+                        <li>SVG and MathML</li>
+                        <li>Table Content</li>
+                        <li>Form Content</li>
+                        <li>Interactive Elements</li>
+                        <li>Web Components</li>
+                    </ul>    
+                </div>
+                <div class="tag-category content-category">
+                    <p>Content Category</p>
+                    <ul>
+                        <li>Metadata Content</li>
+                        <li>Sectioning Content</li>
+                        <li>Flow Content</li>
+                        <li>Phrasing Content</li>
+                        <li>Embedded Content</li>
+                        <li>Form Associated Content</li>
+                        <li>Interactive Content</li>
+                        <li>Script Supporting Content</li>
+                   </ul>                
+                </div>
+            </div>
+            <section class="tag-list main-root">
+                <h3>Main root</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&#60;html&#62;</td>
+                        <td>/</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#taglist">^ Back to the top of this section</a>
+            </section>
+
+            <section class="tag-list metadata-content">
+                <h3>Metadata content</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&#60;base&#62;</td>
+                                <td>/</td>
+                            </tr>
+                            <tr>
+                                <td>&#60;link&#62;</td>
+                                <td>/</td>
+                            </tr>
+                            <tr>
+                                <td>&#60;meta&#62;</td>
+                                <td>/</td>
+                            </tr>
+                            <tr>
+                                <td>&#60;style&#62;</td>
+                                <td>/</td>
+                            </tr>
+                            <tr>
+                                <td>&#60;title&#62;</td>
+                                <td>/</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#taglist">^ Back to the top of this section</a>
+            </section>
+
+            <section class="tag-list sectioning-content">
+                <h3>Sectioning Content</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&#60;html&#62;</td>
+                        <td>/</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#taglist">^ Back to the top of this section</a>
+            </section>
+
+            <section class="tag-list flow-content">
+                <h3>Flow Content</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&#60;html&#62;</td>
+                        <td>/</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#taglist">^ Back to the top of this section</a>
+            </section>
+
+            <section class="tag-list flow-content">
+                <h3>Flow Content</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&#60;html&#62;</td>
+                        <td>/</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#taglist">^ Back to the top of this section</a>
+            </section>
+
+            <section class="tag-list flow-content">
+                <h3>Flow Content</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&#60;html&#62;</td>
+                        <td>/</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#taglist">^ Back to the top of this section</a>
+            </section>
+
+            <section class="tag-list flow-content">
+                <h3>Flow Content</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&#60;html&#62;</td>
+                        <td>/</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#taglist">^ Back to the top of this section</a>
+            </section>
+
+            <section class="tag-list flow-content">
+                <h3>Flow Content</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&#60;html&#62;</td>
+                        <td>/</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#taglist">^ Back to the top of this section</a>
+            </section>
+
+            <section class="tag-list flow-content">
+                <h3>Flow Content</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&#60;html&#62;</td>
+                        <td>/</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#taglist">^ Back to the top of this section</a>
+            </section>
+
+            <section class="tag-list flow-content">
+                <h3>Flow Content</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&#60;html&#62;</td>
+                        <td>/</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#taglist">^ Back to the top of this section</a>
+            </section>
+
+        <h2>More thoughts on HTML Tags - Common combinations & Differences on Confusing Tags</h2>
+            <section>
+                <h3>Common combinations</h3>
+            </section>
+
+            <section>
+                <h3>Differences on Confusing Tags</h3>
+                <a href="#top">^ Back to the top</a>
+            </section>
+
+
+
+        <h2>HTML attributes</h2>
+            <section>
+                <h3>Global attributes</h3>
+                <a href="#top">^ Back to the top</a>
+            </section>
+
+            <section>
+                <h3>Other attributes</h3>
+                <a href="#top">^ Back to the top</a>
+            </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>This is the footer.</p>
+        <address>
+            https://github.com/kamiviolet/<br />
+            @kami-lam<br />
+            @kamiviolet<br />
+        </address>
+    </footer>
+
+</body>
+</html>
