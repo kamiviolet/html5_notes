@@ -56,7 +56,9 @@
   .nav_main {
     display: flex;
   }
-  
+
+/*navigation bar*/
+
   nav {
     background-color: cadetblue;
     border-right: 15px solid darkred;
@@ -93,6 +95,8 @@
     transition: 0.2s;
     background-color: orange;
   }
+
+/* content */
 
   main {
     background-color: orange;
@@ -145,26 +149,32 @@
 
   @media only screen and (max-width: 950px) {
 
-    h2, .title-summary, ul, li {
-        padding: 0.5em;
-      }
-
+    body, header, h1, nav, main, footer {
+      padding: 0.2em;
+    }
+  
+    h2, ul, li, details, p, button, select {
+      padding: 0.1em;
+    }
+  
     .nav_main {
-        flex-direction: column;
+      flex-direction: column;
     }
      
-      nav {
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
-        background-color: cadetblue;
-      }
-
-      nav > ul {
-        flex-direction: row;
-        min-height: 10vh;
-        width: 100%;
+    summary, p, main > ul{
+      margin-left: 0;
     }
 
+    nav {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      background-color: cadetblue;
+    }
 
+    nav > ul {
+      flex-direction: row;
+      min-height: 10vh;
+      width: 100%;
+    }
 }
