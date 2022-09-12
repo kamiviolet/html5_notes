@@ -20,6 +20,10 @@ header {
     background-color: beige;
 }
 
+h1 {
+    line-height: 2em;
+}
+
 main > * {
     margin: 0;
     padding: 1.25em;
