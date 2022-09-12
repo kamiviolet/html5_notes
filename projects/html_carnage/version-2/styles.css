@@ -33,7 +33,7 @@ nav {
 }
 
 main {
-    width: 70vw;
+    min-width: 70vw;
     flex-grow: 1;
 }
 
@@ -102,5 +102,4 @@ th {
     .tag-category > ul {
         padding-right: 1em;
     }
-    
     }
