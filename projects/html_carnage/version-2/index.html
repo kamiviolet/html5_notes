@@ -4,22 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="html, learning, web development, beginner oriented">
+    <meta name="title" content=" Note for HTML Learning">
+    <meta name="description" content="A small project which is to help focus on strengthening own knowledge of HTML/HTML5, especially in aspect of elements and attributes, as well as few relevant concepts about the internet.">
+
     <link rel="stylesheet" href="styles.css" />
-    <title>Scene of Carnage for HTML (ver 2)</title>
+    <title>Note for HTML Learning (HTML Carnage Ver. 2)</title>
 </head>
+
+
+
+<!--
+
+Section 1:
+
+<p><strong>HTML</strong> stands for "Hypertext Markup Language", in which "hypertext" means a string of texts contains a hyperlink and "markup language" refers to <q>a text-encoding system consisting of a set of symbols inserted in a text document to control its structure, formatting, or the relationship between its parts.</q> Another example of markup language is XML (eXtensible Markup Language).</p>
+
+<p>Simply put, HTML is a markup language for hypertext. It is a language for creating webpage, defining its structure and giving meaning to different blocks of text for a browser to render. Everything we see in the internet, more or less, contains HTML.</p>
+
+<p>By "marking up" various parts with tags, HTML describes the structure of a webpage and tells User Agents (UAs) - most typical example is a browser, how to render/display the content. Tags define HTML elements and each of them may associate with certain attributes, which some specific whereas some global.</p>
+
+<p>The latest version of HTML is HTML5. It was release in 2014 (the older version was HTML4.1, which was in practice since 1999). Compared with the previous versions, HTML5 introduced many interesting features and is considered much easier to use.</p>
+
+<p>It is important to bear in mind that HTML is the backbone of the web and it has not stopped evolving since then. Along these years, there is ongoing adjustment to HTML in order to match the need following the rapid development of the internet.</p>
+
+Section 2:
+
+<p>SEO stands for <strong>Search Engine Optimization</strong>. The importance of SEO, in particular in Internet Marketing, can be summarized as below,</p>
+
+<blockquote>"SEO is performed because a website will receive more visitors from a search engine when websites rank higher on the search engine results page (SERP). These visitors can then potentially be converted into customers."</blockquote> <cite> - Wikipedia</cite>
+
+<p>...to be fair, even if it is not for boosting the number of potential customers, it is reasonable that one still wants their webpage to be found and be seen by others - that has been the spirit of internet from very beginning, to interconnect with others. </p>
+
+<p>In past, the algorithm which search engines employed heavily relied on the information provided by the webmasters/content providers. The latter could improve the ranking of their webpages by, for example, adding repeating or even inaccurate search terms / keywords in the metadata. Needless to say more, the search result may appear many irrelevant webpages due to the aforesaid manipulation from the side of webmasters.</p>
+
+<p>To respond such behaviour, search engines started to developing more complex ranking algorithms which calculate the score of webpage in aspect of semantic signals holistically.</p>
+
+-->
+
 <body>
     <header id="top">
         <h1>HTML/HTML5 Practice</h1>
-        <p>Leeeeeet's "Practice makes Perfect"!</p>
+        <p>I would like to get better so I will study hard to grow stronger :)</p>
     </header>
     <nav>
-        <ul>
+        <ul class="menu">
             <a href="#overview"><li>Overview of HTML</li></a>
             <a href="#reasons"><li>Reasons for clearer HTML</li></a>
             <a href="#good-practices"><li>Good practices for HTML</li></a>
-            <a href="#taglist"><li>HTML Tags</li></a>
+            <a href="#taglist"><li>HTML elements</li></a>
+                <ul>
+                    <li>What is HTML element?</li>
+                    <li>Tag list</li>
+                </ul>
             <a href="#"><li>More thoughts on HTML Tags</li></a>
+                <ul>
+                    <li>Tags with similar attributes</li>
+                    <li>Tags may be confused</li>
+                </ul>
             <a href="#"><li>HTML attributes</li></a>
+                <ul>
+                    <li>What is HTML attribute?</li>
+                    <li>Global attributes</li>
+                    <li>Other attributes</li>
+                </ul>
         </ul>
     </nav>
 
@@ -27,8 +75,15 @@
         <h2 id="overview">What is HTML and HTML5? - Overview of HTML</h2>
             <section>
                 <article>
-                    <p><strong>HTML</strong> stands for "Hypertext Markup Language", a language for creating webpages. The current version of HTML is HTML5 which was release in 2014 (the older version was HTML4.1, which was in practice since 1999) and there is ongoing adjustment and changing along the development of the internet.</p>
+                    <p><strong>HTML</strong> stands for "Hypertext Markup Language", in which "hypertext" means a string of texts contains a hyperlink and "markup language" refers to <q>a text-encoding system consisting of a set of symbols inserted in a text document to control its structure, formatting, or the relationship between its parts</q> (From Wikipedia). Another example of markup language is XML (eXtensible Markup Language).</p>
+
+                    <p>Simply put, HTML is a markup language for hypertext. It is a language for creating webpage, defining its structure and giving meaning to different blocks of text for a browser to render. Everything we see in the internet, more or less, contains HTML.</p>
+                    
                     <p>By "marking up" various parts with tags, HTML describes the structure of a webpage and tells User Agents (UAs) - most typical example is a browser, how to render/display the content. Tags define HTML elements and each of them may associate with certain attributes, which some specific whereas some global.</p>
+                    
+                    <p>The latest version of HTML is HTML5. It was release in 2014 (the older version was HTML4.1, which was in practice since 1999). Compared with the previous versions, HTML5 introduced many interesting features and is considered much easier to use.</p>
+                    
+                    <p>It is important to bear in mind that HTML is the backbone of the web and it has not stopped evolving since then. Along these years, there is ongoing adjustment to HTML in order to match the need following the rapid development of the internet.</p>                    
                 </article>
                 <a href="#top">^ Back to the top</a>
             </section>
@@ -36,15 +91,19 @@
         <h2 id="reasons">Reasons for clearer HTML</h2>
             <section>
                 <p>Before heading to the reasons for writing HTML in a clear and semantic manner, it is crucial to know <em>SEO</em>.</p>
-                <details>
-                    <summary>What is SEO?</summary>
-                    <p><strong>SEO</strong> stands for Search Engine Optimization.</p>
-                </details>
-                <br />
-                <details>
-                    <summary>Why is SEO important for a web developer?</summary>
-                    <p>This can help archieve better ranking in the search engine therefore boost the popularity of the webpage.</p>
-                </details>
+                <article>
+                    <p>SEO stands for <strong>Search Engine Optimization</strong>. The importance of SEO, in particular in Internet Marketing, can be summarized as below,</p>
+                    
+                    <blockquote>"SEO is performed because a website will receive more visitors from a search engine when websites rank higher on the search engine results page (SERP). These visitors can then potentially be converted into customers."<cite> - Wikipedia</cite></blockquote> 
+                    
+                    <p>...to be fair, even if it is not for boosting the number of potential customers, it is reasonable that one still wants their webpage to be found and be seen by others - that has been the spirit of internet from very beginning, to interconnect with others. </p>
+                    
+                    <p>In past, the algorithm which search engines employed heavily relied on the information provided by the webmasters/content providers. The latter could improve the ranking of their webpages by, for example, adding repeating or even inaccurate search terms / keywords in the metadata. Needless to say more, the search result may appear many irrelevant webpages due to the aforesaid manipulation from the side of webmasters.</p>
+                    
+                    <p>To respond such behaviour, search engines started to developing more complex ranking algorithms which calculate the score of webpage in aspect of semantic signals holistically.</p>
+
+                    <p>That is one of the main reasons and is quite a strong enough reason alone for us to sharpen own HTML skills. HTML may be plain and not very complicated to learn (seemingly). Nonetheless, it is all about semantics which is crucial for SEO and therefore deserves to receive our attention. It is the foundation always being here (as of now, at least).</p>
+                </article>
             <a href="#top">^ Back to the top</a>
             </section>
 
@@ -337,6 +396,7 @@
             @kamiviolet<br />
         </address>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
