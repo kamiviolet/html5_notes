@@ -173,8 +173,9 @@ table {
         width: 90vw;
     }
 
-    .tag-category > ul {
-        padding-right: 1em;
-    }
+    
+.tag-category-wrapper {
+    flex-direction: column;
+}
 
     }
