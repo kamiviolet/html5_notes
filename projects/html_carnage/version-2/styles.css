@@ -1,10 +1,15 @@
+:root {
+    font-size: 12pt;
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     line-height: 1.5em;
-    font-size: 1.2em;
+    font-size: 1.25em;
 }
 
 header, footer {
@@ -21,8 +26,9 @@ header, footer {
 }
 
 nav {
-    background-color: #dddddd;
     flex-grow: 1;
+    background-color: #dddddd;
+    padding-left: 1em;
 }
 
 .menu {
@@ -32,21 +38,55 @@ nav {
 }
 
 main {
-    width: 70vw;
+    width: 65vw;
     flex-grow: 2;
 }
 
 main > * {
     margin: 0;
-    padding: 1.25em;
+    padding: 1.5em;
 }
 
 a {
     text-decoration: none;
 }
 
+article > p:last-child {
+    margin-bottom: 3em;
+}
+
+.long-quote,
+.alert {
+    border-radius: 10px;
+    margin: 1.5em;    
+}
+
+.long-quote {
+    padding: 1.25em;
+    background-color: rgba(244, 165, 96, 0.6);
+}
+
+.alert {
+    background-color: rgba(207, 167, 167, 0.5);
+    color: darkred;
+}
+
+.my-note {
+    color:darkgreen;
+}
+
+code {
+    background-color: black;
+    color: white;
+    padding: 0.25em;
+}
+
 details {
     background-color: lavender;
+}
+
+details > * {
+    padding: 0.5em;
 }
 
 summary {
@@ -54,12 +94,15 @@ summary {
     font-weight: bold;
 }
 
-ol > li {
-    padding-bottom: 1em;
+ol {
+    margin-right: 5em;
 }
 
-details > * {
-    padding: 0.5em;
+ol > li {
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: lavender;
+    border-radius: 10px;
 }
 
 h2 {
@@ -71,30 +114,51 @@ h2 {
     display: flex;
 }
 
-.tag-category > ul {
-    padding-right: 5em;
+.tag-category {
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em 2em 1em 2em;
+}
+
+.tag-category>*:first-child {
+    font-weight: bold;
 }
 
 /* Table Element*/
 table {
-    min-width: 50vw;
+    width: 50vw;
     border-collapse: collapse;
     margin-bottom: 1.5em;
 }
 
-th, td {
-    border: black 1px solid;
+.table-head {
+    text-align: left;
 }
 
-th {
-    background-color: gainsboro;
+.element, .desciption {
+    padding: 0.25em;
+    vertical-align: top;
+
+    border: #999999 1px solid;
+    background-color: rgba(235, 235, 235, 0.5);
 }
+
+.element {
+    width: 10vw;
+}
+
 
 @media only screen and (max-width: 964px) {
 
     nav {
         display: flex;
         justify-content: center;
+    }
+
+    nav > *,
+    main > * {
+        padding: 0.5em;
     }
 
     .menu {

@@ -16,29 +16,6 @@
 
 <!--
 
-Section 1:
-
-<p><strong>HTML</strong> stands for "Hypertext Markup Language", in which "hypertext" means a string of texts contains a hyperlink and "markup language" refers to <q>a text-encoding system consisting of a set of symbols inserted in a text document to control its structure, formatting, or the relationship between its parts.</q> Another example of markup language is XML (eXtensible Markup Language).</p>
-
-<p>Simply put, HTML is a markup language for hypertext. It is a language for creating webpage, defining its structure and giving meaning to different blocks of text for a browser to render. Everything we see in the internet, more or less, contains HTML.</p>
-
-<p>By "marking up" various parts with tags, HTML describes the structure of a webpage and tells User Agents (UAs) - most typical example is a browser, how to render/display the content. Tags define HTML elements and each of them may associate with certain attributes, which some specific whereas some global.</p>
-
-<p>The latest version of HTML is HTML5. It was release in 2014 (the older version was HTML4.1, which was in practice since 1999). Compared with the previous versions, HTML5 introduced many interesting features and is considered much easier to use.</p>
-
-<p>It is important to bear in mind that HTML is the backbone of the web and it has not stopped evolving since then. Along these years, there is ongoing adjustment to HTML in order to match the need following the rapid development of the internet.</p>
-
-Section 2:
-
-<p>SEO stands for <strong>Search Engine Optimization</strong>. The importance of SEO, in particular in Internet Marketing, can be summarized as below,</p>
-
-<blockquote>"SEO is performed because a website will receive more visitors from a search engine when websites rank higher on the search engine results page (SERP). These visitors can then potentially be converted into customers."</blockquote> <cite> - Wikipedia</cite>
-
-<p>...to be fair, even if it is not for boosting the number of potential customers, it is reasonable that one still wants their webpage to be found and be seen by others - that has been the spirit of internet from very beginning, to interconnect with others. </p>
-
-<p>In past, the algorithm which search engines employed heavily relied on the information provided by the webmasters/content providers. The latter could improve the ranking of their webpages by, for example, adding repeating or even inaccurate search terms / keywords in the metadata. Needless to say more, the search result may appear many irrelevant webpages due to the aforesaid manipulation from the side of webmasters.</p>
-
-<p>To respond such behaviour, search engines started to developing more complex ranking algorithms which calculate the score of webpage in aspect of semantic signals holistically.</p>
 
 -->
 
@@ -50,7 +27,7 @@ Section 2:
     <nav>
         <ul class="menu">
             <a href="#overview"><li>Overview of HTML</li></a>
-            <a href="#reasons"><li>Reasons for clearer HTML</li></a>
+            <a href="#reasons"><li>Reasons for semantic HTML</li></a>
             <a href="#good-practices"><li>Good practices for HTML</li></a>
             <a href="#taglist"><li>HTML elements</li></a>
                 <ul>
@@ -71,63 +48,88 @@ Section 2:
         </ul>
     </nav>
 
+
     <main>
         <h2 id="overview">Overview of HTML</h2>
             <section>
                 <article>
                     <p><strong>What is HTML and HTML5?</strong><p>
                     
-                    <p>HTML stands for "Hypertext Markup Language", in which "hypertext" means a string of texts contains a hyperlink and "markup language" refers to <q>a text-encoding system consisting of a set of symbols inserted in a text document to control its structure, formatting, or the relationship between its parts</q> (From Wikipedia). Another example of markup language is XML (eXtensible Markup Language).</p>
+                    <p>HTML stands for <em>"Hyper Text Markup Language"</em>, a markup language for hypertext. The term "hypertext" originally means a text contained a hyperlink, a simple example can be "Link" in <code>&#60;a&#62;Link&#60;/a&#62;</code>. Hypertext can then also mean a document which contains hyperlink(s) connected to other parts of the same or other sources.</p>
+                    
+                    <p>On the other hand, "markup language" refers to <q>a text-encoding system consisting of a set of symbols inserted in a text document to control its structure, formatting, or the relationship between its parts</q> (From Wikipedia). Another example of markup language is XML (eXtensible Markup Language).</p>
 
-                    <p>Simply put, HTML is a markup language for hypertext. It is a language for creating webpage, defining its structure and giving meaning to different blocks of text for a browser to render. Everything we see in the internet, more or less, contains HTML.</p>
+                    <p>HTML is a language for creating webpage, defining its structure and giving meaning to different blocks of text for being rendered. Everything we see in the internet, be it a webpage or an application on mobile, more or less, contains HTML.</p>
                     
-                    <p>By "marking up" various parts with tags, HTML describes the structure of a webpage and tells User Agents (UAs) - most typical example is a browser, how to render/display the content. Tags define HTML elements and each of them may associate with certain attributes, which some specific whereas some global.</p>
+                    <p>The latest version of HTML is HTML5. It was release in 2014 (the older version was HTML4.1, which was in practice for a whole 15 years since 1999). Compared with the previous versions, HTML5 introduced many interesting features and is considered much easier to use. In the later sections, those new features will be highlighted for ease of reference.</p>
                     
-                    <p>The latest version of HTML is HTML5. It was release in 2014 (the older version was HTML4.1, which was in practice since 1999). Compared with the previous versions, HTML5 introduced many interesting features and is considered much easier to use.</p>
-                    
-                    <p>It is important to bear in mind that HTML is the backbone of the web and it has not stopped evolving since then. Along these years, there is ongoing adjustment to HTML in order to match the need following the rapid development of the internet.</p>                    
+                    <p>Summary:<br />It is important to bear in mind that HTML is the backbone of the web and it has not stopped evolving since then. Along these years, there is ongoing adjustment to HTML in order to match the need following the rapid development of the internet.</p>                    
                 </article>
                 <a href="#top">^ Back to the top</a>
             </section>
 
-        <h2 id="reasons">Reasons for clearer HTML</h2>
+        <h2 id="reasons">Reasons for semantic HTML</h2>
             <section>
                 <p>Before heading to the reasons for writing HTML in a clear and semantic manner, it is crucial to know <em>SEO</em>.</p>
                 <article>
                     <p>SEO stands for <strong>Search Engine Optimization</strong>. The importance of SEO, in particular in Internet Marketing, can be summarized as below,</p>
                     
-                    <blockquote>"SEO is performed because a website will receive more visitors from a search engine when websites rank higher on the search engine results page (SERP). These visitors can then potentially be converted into customers."<cite> - Wikipedia</cite></blockquote> 
+                    <blockquote class="long-quote">
+                        "SEO is performed because a website will receive more visitors from a search engine when websites rank higher on the search engine results page (SERP). These visitors can then potentially be converted into customers."<cite> - Wikipedia</cite>
+                    </blockquote> 
                     
-                    <p>...to be fair, even if it is not for boosting the number of potential customers, it is reasonable that one still wants their webpage to be found and be seen by others - that has been the spirit of internet from very beginning, to interconnect with others. </p>
+                    <p class="my-note">&#60;!-- To be fair... even if it is not for boosting the number of potential customers, it is reasonable that one still wants their webpage to be found and be seen by others - after all, that has been the spirit of internet from very beginning - to interconnect with others.--&#62;</p>
                     
-                    <p>In past, the algorithm which search engines employed heavily relied on the information provided by the webmasters/content providers. The latter could improve the ranking of their webpages by, for example, adding repeating or even inaccurate search terms / keywords in the metadata. Needless to say more, the search result may appear many irrelevant webpages due to the aforesaid manipulation from the side of webmasters.</p>
+                    <p>Accordingly, in the past (which was not so far ago), the algorithm the search engines employed heavily relied on the information provided by the webmasters/content providers. The latter could improve the ranking of their webpages by methods as simple as adding repeating or even inaccurate search terms / keywords in the metadata. Needless to say, the search result may then appear many irrelevant webpages due to the aforesaid manipulation from the side of webmasters.</p>
                     
                     <p>To respond such behaviour, search engines started to developing more complex ranking algorithms which calculate the score of webpage in aspect of semantic signals holistically.</p>
 
-                    <p>That is one of the main reasons and is quite a strong enough reason alone for us to sharpen own HTML skills. HTML may be plain and not very complicated to learn (seemingly). Nonetheless, it is all about semantics which is crucial for SEO and therefore deserves to receive our attention. It is the foundation always being here (as of now, at least).</p>
+                    <p>That is one of the main reasons and is a strong enough reason for writing HTML in a clear and semantic way. HTML may be plain and not very complicated to learn (compared with programming languages). Nonetheless, it is all about semantics which is crucial for SEO and therefore deserves to receive our attention.</p>
+
+                    <p class="my-note">
+                        &#60;!--<br />Other than SEO, I think we should bear in mind that the cost of creating something in digital form may be low compared with the material world but it does not mean no cost. We should always treasure the resources we have at hands at the moment and utilize them.
+                        <br /><br />
+                        Writing semantic HTML can lower the maintenance cost resulting in higher sustainability rate of the code itself. Again, HTML may be plain and not as fancy as programming languages or stylesheet lanaguage as CSS; however, it is an essential part of the internet and building up a good (sustainable) habit of writing HTML is just same as any other aforesaid languages.<br />--&#62;
+                    </p>
                 </article>
             <a href="#top">^ Back to the top</a>
             </section>
 
         <h2 id="good-practices">How to write clearer HTML? (Good practices for HTML)</h2>
             <section>
+                <p>The following can serve as a brief reminder/guideline as a starter: </p>
+
                 <ol>
-                    <li>Avoid abusing &#60;div&#62; and &#60;span&#62;.<br /><br />There are tons of alternative with built-in features provided by HTML5 (we will cover that more in other parts on this page).</li>
-                    <li>Be discreet when giving name to the class/ID for elements, be specific (avoid using numbering as class name, ie picture1-6 but picture-left/picture-center). </li>
-                    <li>Have a more compound class attribute with a string of generic classes which could be reuseable - like the way Bootstrap is.</li>
-                    <li>Use lowercase for elements, attributes and also values, for better readability and consistency.</li>
-                    <li>Use labels for labelable elements for better machine readability.</li>
-                    <li>Always think of the possibilities of incompatibility and prepare alternative ways as fall-back.</li>
-                    <li>Use &#60;h1&#62; only once per page.</li>
+                    <li>Make good use of semantic tags provided in HTML5, instead of abusing &#60;div&#62; and &#60;span&#62; (only use those when no better options available).</li>
+
+                    <li>Give desciptive ID/class name, instead of general numbering, for example "#picture-left/#picture-center) but not "#picture1".</li>
+
+                    <li>Try to develop a more compound class attribute with generic classes so the style could be reuseable - one can consider the way how Bootstrap works.</li>
+
+                    <li>Use lowercase and kebab-case throughout HTML (let camelCase belong to Javascript), for better readability and consistency.</li>
+
+                    <li>Use &#60;h1&#62; only ONCE in a webpage.</li>
+
+                    <li>Prepare alternatives as fall-back for any form of multimedia rendering.</li>
+
+                    <li>Use labels for every labelable elements for better machine readability and accessibility.</li>
+
+                    <li>Add a title attribute in anchor elements (&#60;a&#62;) and most importantly, give it a meaningful desciption for same reason.</li>
                 </ol>
+
+                <p>By all means the above list is not exhaustive and can carry on and on endlessly. There are more to be put into consideration for a good coding practice - however minor and trival those may seem.</p>
             <a href="#top">^ Back to the top</a>
             </section>
 
-        <h2 id="taglist">HTML Tags</h2>
-            <p>The elements/tags can be grouped into the categories as below:</p>
+        <h2 id="taglist">HTML elements</h2>
+            <p>Elements are the core part of HTML, among which most are wrapped by a start tag/ an opening tag (&#60;element name&#62;) and an end tag/ a closing tag (&#60;/&#62;), few have only a start tag (&#60;element name /&#62;) - personally, the difference between two is similar to the difference between intransitive and transitive verbs in English. With the markup, User Agents (UAs), web browser as a typical example, can know how to render the content accordingly.</p>
+
+            <p class="alert">The information displayed in the section of HTML elements and of HTML attributes is largely from MDN. Please visit MDN for further details.</p>
+
+            <p>All elements/tags can be grouped into various categories. The following "Structure-based Category" and "Content-based Category" (madeup terms) are grouping elements by different logic, either where they are placed or what meaning they define.</p>
             <div class="tag-category-wrapper">
                 <div class="tag-category structural-category">
-                    <p>Strutural Category</p>
+                    <p>Structure-based Category</p>
                     <ul>
                         <li>Main Root</li>
                         <li>Document Metadata</li>
@@ -144,7 +146,7 @@ Section 2:
                     </ul>    
                 </div>
                 <div class="tag-category content-category">
-                    <p>Content Category</p>
+                    <p>Content-based Category</p>
                     <ul>
                         <li>Metadata Content</li>
                         <li>Sectioning Content</li>
@@ -157,19 +159,20 @@ Section 2:
                    </ul>                
                 </div>
             </div>
+
             <section class="tag-list main-root">
                 <h3>Main root</h3>
                 <table>
                     <thead>
                         <tr>
-                            <th>Element</th>
-                            <th>Description</th>
+                            <th class="table-head element">Element</th>
+                            <th class="table-head desciption">Description</th>
                         </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>&#60;html&#62;</td>
-                        <td>/</td>
+                        <td class="element">&#60;html&#62;</td>
+                        <td class="desciption">HTML element represents the root (top-level element) of an HTML document, therefore also referred to as Root element. Every webpage contains strictly only one HTML element. All other elements must be its descendants</td>
                     </tr>
                     </tbody>
                 </table>
@@ -181,30 +184,30 @@ Section 2:
                     <table>
                         <thead>
                             <tr>
-                                <th>Element</th>
-                                <th>Description</th>
+                                <th class="table-head element">Element</th>
+                                <th class="table-head desciption">Description</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>&#60;base&#62;</td>
-                                <td>/</td>
+                                <td class="element">&#60;base&#62;</td>
+                                <td class="desciption">/</td>
                             </tr>
                             <tr>
-                                <td>&#60;link&#62;</td>
-                                <td>/</td>
+                                <td class="element">&#60;link&#62;</td>
+                                <td class="desciption">/</td>
                             </tr>
                             <tr>
-                                <td>&#60;meta&#62;</td>
-                                <td>/</td>
+                                <td class="element">&#60;meta&#62;</td>
+                                <td class="desciption">/</td>
                             </tr>
                             <tr>
-                                <td>&#60;style&#62;</td>
-                                <td>/</td>
+                                <td class="element">&#60;style&#62;</td>
+                                <td class="desciption">/</td>
                             </tr>
                             <tr>
-                                <td>&#60;title&#62;</td>
-                                <td>/</td>
+                                <td class="element">&#60;title&#62;</td>
+                                <td class="desciption">/</td>
                             </tr>
                         </tbody>
                     </table>
@@ -216,152 +219,21 @@ Section 2:
                 <table>
                     <thead>
                         <tr>
-                            <th>Element</th>
-                            <th>Description</th>
+                            <th class="table-head element">Element</th>
+                            <th class="table-head desciption">Description</th>
                         </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>&#60;html&#62;</td>
-                        <td>/</td>
+                        <td class="element">&#60;/&#62;</td>
+                        <td class="desciption">/</td>
                     </tr>
                     </tbody>
                 </table>
                 <a href="#taglist">^ Back to the top of this section</a>
             </section>
 
-            <section class="tag-list flow-content">
-                <h3>Flow Content</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Element</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>&#60;html&#62;</td>
-                        <td>/</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <a href="#taglist">^ Back to the top of this section</a>
-            </section>
 
-            <section class="tag-list flow-content">
-                <h3>Flow Content</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Element</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>&#60;html&#62;</td>
-                        <td>/</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <a href="#taglist">^ Back to the top of this section</a>
-            </section>
-
-            <section class="tag-list flow-content">
-                <h3>Flow Content</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Element</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>&#60;html&#62;</td>
-                        <td>/</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <a href="#taglist">^ Back to the top of this section</a>
-            </section>
-
-            <section class="tag-list flow-content">
-                <h3>Flow Content</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Element</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>&#60;html&#62;</td>
-                        <td>/</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <a href="#taglist">^ Back to the top of this section</a>
-            </section>
-
-            <section class="tag-list flow-content">
-                <h3>Flow Content</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Element</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>&#60;html&#62;</td>
-                        <td>/</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <a href="#taglist">^ Back to the top of this section</a>
-            </section>
-
-            <section class="tag-list flow-content">
-                <h3>Flow Content</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Element</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>&#60;html&#62;</td>
-                        <td>/</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <a href="#taglist">^ Back to the top of this section</a>
-            </section>
-
-            <section class="tag-list flow-content">
-                <h3>Flow Content</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Element</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>&#60;html&#62;</td>
-                        <td>/</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <a href="#taglist">^ Back to the top of this section</a>
-            </section>
 
         <h2>More thoughts on HTML Tags - Common combinations & Differences on Confusing Tags</h2>
             <section>
