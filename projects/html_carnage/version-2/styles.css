@@ -4,11 +4,13 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    line-height: 1.5em;
+    line-height: 1.75em;
     font-size: 1.25em;
 }
 h1, h2 {
     line-height: 1.75em;
+    font-variant: small-caps;
+    padding: 0.5em;
 }
 
 header, footer {
@@ -26,28 +28,36 @@ header, footer {
 
 nav {
     flex-grow: 1;
-    background-color: #dddddd;
-    padding-left: 1em;
 }
 
 .menu {
+    padding-top: 1em;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+
+    list-style-type: none;
+    padding: 5% 10%;
 }
 
-main {
-    width: 65vw;
-    flex-grow: 2;
+nav > ul > li {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #999999;
 }
 
-main > * {
-    margin: 0;
-    padding: 1.5em;
+
+nav > ul > li:last-child {
+    border: none;
 }
 
 a {
     text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    width: 65vw;
+    flex-grow: 2;
 }
 
 section > p:last-child {
@@ -56,17 +66,18 @@ section > p:last-child {
 
 .long-quote,
 .alert {
-    border-radius: 10px;
-    margin: 1.5em;    
+    margin: 1.5em;  
+    padding: 1.25em;  
 }
 
 .long-quote {
-    padding: 1.25em;
-    background-color: rgba(244, 165, 96, 0.6);
+    background-color: rgba(244, 165, 96, 0.3);
+    border-left: 5px solid salmon;
 }
 
 .alert {
-    background-color: rgba(207, 167, 167, 0.5);
+    background-color: rgba(207, 167, 167, 0.3);
+    border-left: 5px solid darkred;
     color: darkred;
 }
 
@@ -93,10 +104,6 @@ summary {
     font-weight: bold;
 }
 
-ol {
-    margin-right: 5em;
-}
-
 ol > li {
     margin-bottom: 1em;
     padding: 1em;
@@ -110,17 +117,21 @@ h2 {
 
 .tag-category-wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tag-category {
     background-color: aliceblue;
     border-radius: 10px;
     margin: 1em;
-    padding: 1em 2em 1em 2em;
+    padding: 1em 3em 1em 3em;
 }
 
-.tag-category>*:first-child {
+.tag-category li:first-child {
+    list-style-type: none;
+    text-align: center;
     font-weight: bold;
+    padding-bottom: 1.5em;
 }
 
 /* Table Element*/
@@ -171,9 +182,8 @@ table {
         width: 90vw;
     }
 
-    
-.tag-category-wrapper {
-    flex-direction: column;
-}
+    .tag-category {
+        flex: auto;
+    }
 
     }

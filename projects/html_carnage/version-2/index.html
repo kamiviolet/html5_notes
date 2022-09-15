@@ -21,8 +21,10 @@
 
 <body>
     <header id="top">
-        <h1>HTML/HTML5 Practice</h1>
-        <p>I would like to get better so I will study hard to grow stronger :)</p>
+        <hgroup>
+            <h1>HTML/HTML5 Practice</h1>
+            <p>I would like to get better so I will study hard to grow stronger :)</p>
+        </hgroup>
     </header>
     <nav>
         <ul class="menu">
@@ -55,7 +57,7 @@
     <main>
         <section id="overview" class="section overview">
             <h2>Overview of HTML</h2>
-            <p><abbr title="Hyper Text Markup Language">HTML</abbr> stands for <em>"Hyper Text Markup Language"</em>, a markup language for hypertext. The term "hypertext" can chase back to even 1940s and originally means a text contained a hyperlink, a simple example can be "Link" in <code>&#60;a&#62;Link&#60;/a&#62;</code>. Hypertext can then also mean a document which contains hyperlink(s) connected to other parts of the same or other sources.</p>
+            <p>HTML stands for <em>"Hyper Text Markup Language"</em>, a markup language for hypertext. The term "hypertext" can chase back to even 1940s and originally means a text contained a hyperlink, a simple example can be "Link" in <code>&#60;a&#62;Link&#60;/a&#62;</code>. Hypertext can then also mean a document which contains hyperlink(s) connected to other parts of the same or other sources.</p>
             <p>On the other hand, "markup language" refers to <q>a text-encoding system consisting of a set of symbols inserted in a text document to control its structure, formatting, or the relationship between its parts</q> (From Wikipedia). Other examples of markup language are XHTML (eXtensible Hypertext Markup Language) and XML (eXtensible Markup Language).</p>
             <p>HTML is a language for creating webpage, defining its structure and giving meaning to different blocks of text for being rendered. Everything we see in the internet, be it a webpage or an application on mobile, more or less, contains HTML. (XHTML is also used for creating webpages, in hope of replacing HTML, which will not be covered here.)</p>
             <p>The latest version of HTML is HTML5. It was release in 2014 (the older version was HTML4.1, which was in practice for a whole 15 years since 1999). Compared with the previous versions, HTML5 introduced many interesting features and is considered much easier to use. In the later sections, those new features will be highlighted for ease of reference.</p>
@@ -94,6 +96,7 @@
                 <li>Prepare alternatives as fall-back for any form of multimedia rendering.</li>
                 <li>Use labels for every labelable elements for better machine readability and accessibility.</li>
                 <li>Add a title attribute in anchor elements (&#60;a&#62;) and most importantly, give it a meaningful desciption for same reason.</li>
+                <li>Always validate and minify the HTML document.</li>
             </ol>
             <p>By all means the above list is not exhaustive and can carry on and on endlessly. There are more to be put into consideration for a good coding practice - however minor and trival those may seem.</p>
             <a href="#top">^ Back to the top</a>
@@ -102,7 +105,6 @@
         <section>
             <h2 id="taglist">HTML elements</h2>
             <p>Elements are the core part of HTML, among which most are wrapped by a start tag/ an opening tag (&#60;element name&#62;) and an end tag/ a closing tag (&#60;/&#62;), few have only a start tag (&#60;element name /&#62;) - personally, the difference between two is similar to the difference between intransitive and transitive verbs in English. With the markup, User Agents (UAs), web browser as a typical example, can know how to render the content accordingly.</p>
-            <p class="alert">The information displayed in the section of HTML elements and of HTML attributes is largely from MDN. Please visit MDN for further details.</p>
             <p>All elements/tags can be grouped into various categories. The following "Structure-based Category" and "Content-based Category" (madeup terms) are grouping elements by different logic, either where they are placed or what meaning they define.</p>
             <div class="tag-category-wrapper">
                 <ul class="tag-category structural-category">
