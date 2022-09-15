@@ -11,6 +11,9 @@ body {
     line-height: 1.5em;
     font-size: 1.25em;
 }
+h1, h2 {
+    line-height: 1.75em;
+}
 
 header, footer {
     flex-basis: 100%;
@@ -51,7 +54,7 @@ a {
     text-decoration: none;
 }
 
-article > p:last-child {
+section > p:last-child {
     margin-bottom: 3em;
 }
 
