@@ -31,7 +31,6 @@ nav {
 }
 
 .menu {
-    padding-top: 1em;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -160,30 +159,16 @@ table {
 
 @media only screen and (max-width: 964px) {
 
-    nav {
-        display: flex;
-        justify-content: center;
+    .tag-category, nav {
+        flex: auto;
     }
-
-    nav > *,
-    main > * {
+    
+    nav, main {
         padding: 0.5em;
     }
-
-    .menu {
-        position: relative;
-    }
-
-    main {
-        width: 100vw;
-    }
-
-    table {
+    
+    main, table {
         width: 90vw;
-    }
-
-    .tag-category {
-        flex: auto;
     }
 
     }
