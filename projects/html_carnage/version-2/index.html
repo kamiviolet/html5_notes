@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keyword" content="html, learning, web development, beginner oriented">
-    <meta name="title" content=" Note for HTML Learning">
-    <meta name="description" content="A small project which is to help focus on strengthening own knowledge of HTML/HTML5, especially in aspect of elements and attributes, as well as few relevant concepts about the internet.">
+    <meta name="title" content="A Beginner's Notes for HTML Learning">
+    <meta name="description" content="A small project which is to help focus on strengthening own knowledge of HTML, especially in aspect of elements and attributes, as well as few relevant concepts about the internet.">
 
-    <link rel="stylesheet" href="styles.css" />
-    <title>Note for HTML Learning (HTML Carnage Ver. 2)</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>A Beginner's Notes for HTML Learning</title>
 </head>
 
 
@@ -21,8 +21,8 @@
 
 <body>
     <header id="top">
-        <h1>HTML/HTML5 Practice</h1>
-        <p>I would like to get better so I will study hard to grow stronger :)</p>
+        <h1>A Beginner's Notes for HTML Learning</h1>
+        <p>Because I want to get better and grow stronger, I will study hard..er :)</p>
     </header>
     <nav>
         <ul class="menu">
@@ -48,7 +48,8 @@
                     <li>Other attributes</li>
                 </ul>
             </li>
-            <li><a href="#links">Further reading</a></li>
+            <li><a href="#links">Further reading and reference</a></li>
+            <li><a href="#links">About me</a></li>
         </ul>
     </nav>
 
@@ -59,8 +60,9 @@
             <p>HTML stands for <em>"Hyper Text Markup Language"</em>, a markup language for hypertext. The term "hypertext" can chase back to even 1940s and originally means a text contained a hyperlink, a simple example can be "Link" in <code>&#60;a&#62;Link&#60;/a&#62;</code>. Hypertext can then also mean a document which contains hyperlink(s) connected to other parts of the same or other sources.</p>
             <p>On the other hand, "markup language" refers to <q>a text-encoding system consisting of a set of symbols inserted in a text document to control its structure, formatting, or the relationship between its parts</q> (From Wikipedia). Other examples of markup language are XHTML (eXtensible Hypertext Markup Language) and XML (eXtensible Markup Language).</p>
             <p>HTML is a language for creating webpage, defining its structure and giving meaning to different blocks of text for being rendered. Everything we see in the internet, be it a webpage or an application on mobile, more or less, contains HTML. (XHTML is also used for creating webpages, in hope of replacing HTML, which will not be covered here.)</p>
-            <p>The latest version of HTML is HTML5. It was release in 2014 (the older version was HTML4.1, which was in practice for a whole 15 years since 1999). Compared with the previous versions, HTML5 introduced many interesting features and is considered much easier to use. In the later sections, those new features will be highlighted for ease of reference.</p>
-            <p>Summary:<br />It is important to bear in mind that HTML is the backbone of the web and it has not stopped evolving since then. Along these years, there is ongoing adjustment to HTML in order to match the need following the rapid development of the internet.</p>                    
+            <p>The standard of HTML was once maintained by World Wide Web Consortium (W3C) for a very long time and the latest version W3C recommended was HTML5 in 2014, to replace HTML4.1, which was in practice for a whole 15 years since 1999. Compared with the previous versions, HTML5 introduced many interesting features and is considered much easier to use. In the later sections, those new features will be highlighted for ease of reference.</p>
+            <p>The current specification for HTML is maintained by WHATWG and is called HTML living standard.</p>
+            <p>Summary:<br>It is important to bear in mind that HTML is the backbone of the web and it has not stopped evolving since then. Along these years, there is ongoing adjustment to HTML in order to match the need following the rapid development of the internet.</p>                    
             <a href="#top">^ Back to the top</a>
         </section>
 
@@ -71,14 +73,14 @@
             <blockquote class="long-quote">
                 "SEO is performed because a website will receive more visitors from a search engine when websites rank higher on the search engine results page (SERP). These visitors can then potentially be converted into customers."<cite> - Wikipedia</cite>
             </blockquote> 
-            <p class="my-note">&#60;!-- To be fair... even if it is not for boosting the number of potential customers, it is reasonable that one still wants their webpage to be found and be seen by others - after all, that has been the spirit of internet from very beginning - to interconnect with others.--&#62;</p>
+            <p class="my-note">To be fair... even if it is not for boosting the number of potential customers, it is reasonable that one still wants their webpage to be found and be seen by others - after all, that has been the spirit of internet from very beginning - to interconnect with others.</p>
             <p>Accordingly, in the past (which was not so far ago), the algorithm the search engines employed heavily relied on the information provided by the webmasters/content providers. The latter could improve the ranking of their webpages by methods as simple as adding repeating or even inaccurate search terms / keywords in the metadata. Needless to say, the search result may then appear many irrelevant webpages due to the aforesaid manipulation from the side of webmasters.</p>
             <p>To respond such behaviour, search engines started to developing more complex ranking algorithms which calculate the score of webpage in aspect of semantic signals holistically.</p>
             <p>That is one of the main reasons and is a strong enough reason for writing HTML in a clear and semantic way. HTML may be plain and not very complicated to learn (compared with programming languages). Nonetheless, it is all about semantics which is crucial for SEO and therefore deserves to receive our attention.</p>
             <p class="my-note">
-                &#60;!--<br />Other than SEO, I think we should bear in mind that the cost of creating something in digital form may be low compared with the material world but it does not mean no cost. We should always treasure the resources we have at hands at the moment and utilize them.
-                <br /><br />
-                Writing semantic HTML can lower the maintenance cost resulting in higher sustainability rate of the code itself. Again, HTML may be plain and not as fancy as programming languages or stylesheet lanaguage as CSS; however, it is an essential part of the internet and building up a good (sustainable) habit of writing HTML is just same as any other aforesaid languages.<br />--&#62;
+                <br>Other than SEO, I think we should bear in mind that the cost of creating something in digital form may be low compared with the material world but it does not mean no cost. We should always treasure the resources we have at hands at the moment and utilize them.
+                <br><br>
+                Writing semantic HTML can lower the maintenance cost resulting in higher sustainability rate of the code itself. Again, HTML may be plain and not as fancy as programming languages or stylesheet lanaguage as CSS; however, it is an essential part of the internet and building up a good (sustainable) habit of writing HTML is just same as any other aforesaid languages.<br>
             </p>
             <a href="#top">^ Back to the top</a>
         </section>
@@ -104,7 +106,7 @@
         <section>
             <h2 id="taglist">HTML elements</h2>
             <p>Elements are the core part of HTML, among which most are wrapped by a start tag/ an opening tag (&#60;element name&#62;) and an end tag/ a closing tag (&#60;/&#62;), few have only a start tag (&#60;element name /&#62;) - personally, the difference between two is similar to the difference between intransitive and transitive verbs in English. With the markup, User Agents (UAs), web browser as a typical example, can know how to render the content accordingly.</p>
-            <p>All elements/tags can be grouped into various categories. The following "Structure-based Category" and "Content-based Category" (madeup terms) are grouping elements by different logic, either where they are placed or what meaning they define.</p>
+            <p>All elements/tags can be grouped into various categories. The following "Structure-based Category" and "Content-based Category" (my own madeup terms) are grouping elements by different logic, either where they are placed or what meaning they define.</p>
             <div class="tag-category-wrapper">
                 <ul class="tag-category structural-category">
                     <li>Structure-based Category</li>
@@ -133,7 +135,7 @@
                     <li>Script Supporting Content</li>
                 </ul>                
             </div>
-
+            <p>In the following lists, HTML elements are provided with a brief description and personal notes for highlight (some with example, if I am less familiar with).</p>
             <div class="subsection tag-list main-root">
                 <h3>Main root</h3>
                 <table>
@@ -146,7 +148,7 @@
                     <tbody>
                     <tr>
                         <td class="element">&#60;html&#62;</td>
-                        <td class="desciption">HTML element represents the root (top-level element) of an HTML document, therefore also referred to as Root element. Every webpage contains strictly only one HTML element. All other elements must be its descendants</td>
+                        <td class="desciption">Represents the root (top-level element) of an HTML document, therefore also referred to as Root element. Every webpage contains strictly only one HTML element. All other elements must be its descendants</td>
                     </tr>
                     </tbody>
                 </table>
@@ -155,6 +157,7 @@
 
             <div class="subsection tag-list metadata-content">
                 <h3>Metadata content</h3>
+                <p>Metadata contains information about the page, including information about styles, scripts and data to help machine use and render the webpage. In particular, those information about styles and scripts could be either defined in the same document or linked to external files. When it is on the same document, except the scripts, it is wrapped by &#60;style&#62;tagged within &#60;head&#62; element.</p>
                     <table>
                         <thead>
                             <tr>
@@ -164,24 +167,54 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td class="element">&#60;head&#62;</td>
+                                <td class="desciption">Contains machine-readable information (metadata) about the document, for example: title, keywords, scripts for JS, and stylesheets.</td>
+                            </tr>
+                            <tr>
                                 <td class="element">&#60;base&#62;</td>
-                                <td class="desciption">/</td>
+                                <td class="desciption">
+                                    Specifies the base URL for all relative URLs in the same documernt. Can only appear once in a single document.
+                                    Example:
+                                    <br>
+                                    <code>&#60;base target="_top" href="https://example.com/"/&#62;</code>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="element">&#60;link&#62;</td>
-                                <td class="desciption">/</td>
+                                <td class="desciption">
+                                    Specifies relationships between the document and an external resource - most commonly for stylesheets, but is also used for importing icons/fonts. Basic example:
+                                    <br>
+                                    <code>&#60;link href="style.css" rel="stylesheet" /&#62;</code>
+                                    <br>
+                                    More interesting example:
+                                    <code class="code-block">
+                                        &#60;link href="print.css" rel="stylesheet" media="print" /&#62;<br>
+                                        &#60;link href="mobile.css" rel="stylesheet" media="all" /&#62;<br>
+                                        &#60;link<br>
+                                        href="desktop.css"<br>
+                                        rel="stylesheet"<br>
+                                        media="screen and (min-width: 600px)" /&#62;
+                                    </code>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="element">&#60;meta&#62;</td>
-                                <td class="desciption">/</td>
+                                <td class="desciption">
+                                    Used when the concerned information cannot be represented by other HTML meta-related elements, ie base, link, style, title or script. Normally, it contains at least 2 attributes: name, and its value - content. The usage can be for setting up keywords, title and description, <abbr title="character set">charset</abbr>, viewport, etc. For example, 
+                                    <code class="code-block">
+                                        &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;<br>
+                                        &#60;meta name="keyword" content="html, learning, web development, beginner oriented"&#62;<br>
+                                        &#60;meta name="title" content="A Beginner's Notes for HTML/HTML5 Learning"&#62;
+                                    </code>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="element">&#60;style&#62;</td>
-                                <td class="desciption">/</td>
+                                <td class="desciption">Contains style information for a document, or part of a document. It contains CSS.</td>
                             </tr>
                             <tr>
                                 <td class="element">&#60;title&#62;</td>
-                                <td class="desciption">/</td>
+                                <td class="desciption">Defines the document's title that is shown in a Browser's title bar or a page's tab.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -199,8 +232,28 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="element">&#60;/&#62;</td>
-                        <td class="desciption">/</td>
+                        <td class="element">&#60;body&#62;</td>
+                        <td class="desciption">Represents the content of an HTML document. There can be only one &#60;body&#62; element in a document.</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#taglist">^ Back to the top of this section</a>
+            </div>
+
+            
+            <div class="subsection tag-list sectioning-content">
+                <h3>Sectioning Content</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table-head element">Element</th>
+                            <th class="table-head desciption">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="element">&#60;body&#62;</td>
+                        <td class="desciption">Represents the content of an HTML document. There can be only one &#60;body&#62; element in a document.</td>
                     </tr>
                     </tbody>
                 </table>
@@ -231,14 +284,29 @@
             </div>
             <a href="#top">^ Back to the top</a>
         </section>
+
+        <section>
+            <h2 id="links">Further reading and reference</h2>
+            <dl>
+                <dt><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML" target="_blank">HTML: A good basis for accessibility</a>, MDN</dt>
+                <dd>A further and detailed explanation for the importance of using Semantic HTML</dd>
+                <dt><a href="http://www.webdevout.net/articles/beware-of-xhtml" target="_blank">Be aware of XHTML</a>, David HAMMOND</dt>
+                <dd>One of many articles and discussions available online explained the issues related to XHTML.</dd>
+                <dt><a href="https://validator.w3.org/" target="_blank">The W3C Markup Validation Service</a>, W3C</dt>
+                <dd>A HTML Validator provided by W3C.</dd>
+                <dt><a href="https://html.spec.whatwg.org/" target="_blank">HTML Living Standard</a>, WHATWG</dt>
+                <dd>The official and live recommendation for HTML standard.</dd>
+            </dl>
+            <a href="#top">^ Back to the top</a>
+        </section>
     </main>
 
     <footer>
         <p>HTML Scene of Carnage (version 2)</p>
         <address>
-            https://github.com/kamiviolet/<br />
-            @kami-lam<br />
-            @kamiviolet<br />
+            https://github.com/kamiviolet/<br>
+            @kami-lam<br>
+            @kamiviolet<br>
         </address>
     </footer>
     <script src="script.js"></script>
