@@ -108,7 +108,7 @@ code {
 }
 
 details > summary {
-    list-style: none;
+    list-style-type: none;
     font-weight: bold;
 }
 
