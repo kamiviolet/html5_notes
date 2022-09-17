@@ -110,7 +110,6 @@ code {
 details > summary {
     list-style-type: none;
     font-weight: bold;
-    font-size: 1em;
 }
 
 ol > li {
