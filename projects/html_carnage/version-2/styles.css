@@ -8,6 +8,7 @@ body {
     font-size: 1.25em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 h1, h2 {
     line-height: 1.5em;
     font-variant: small-caps;
@@ -106,16 +107,8 @@ code {
     display: block;
 }
 
-details {
-    background-color: lavender;
-}
-
-details > * {
-    padding: 0.5em;
-}
-
-summary {
-    font-size: 1.15em;
+details > summary {
+    list-style: none;
     font-weight: bold;
 }
 

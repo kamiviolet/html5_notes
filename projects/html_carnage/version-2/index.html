@@ -89,15 +89,41 @@
             <h2 id="good-practices">How to write clearer HTML? (Good practices for HTML)</h2>
             <p>The following can serve as a brief reminder/guideline as a starter: </p>
             <ol>
-                <li>Make good use of semantic tags provided in HTML5, instead of abusing &#60;div&#62; and &#60;span&#62; (only use those when no better options available).</li>
-                <li>Give desciptive ID/class name, instead of general numbering, for example "#picture-left/#picture-center) but not "#picture1".</li>
-                <li>Try to develop a more compound class attribute with generic classes so the style could be reuseable - one can consider the way how Bootstrap works.</li>
-                <li>Use lowercase and kebab-case throughout HTML (let camelCase belong to Javascript), for better readability and consistency.</li>
-                <li>Use &#60;h1&#62; only ONCE in a webpage.</li>
+                <li>
+                    <details open>
+                        <summary>Make good use of semantic tags, for example &#60;main&#62;, &#60;section&#62;, &#60;nav&#62;, &#60;aside&#62;, etc.</summary>
+                        ...instead of abusing &#60;div&#62; and &#60;span&#62; (only use those when no better options available).
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>Give desciptive ID/class name, for example "#picture-left/.picture-center" so that one may refer to the concerned element in HTML more easily.</summary>
+                        ... instead of simply using abstract numbers to address the elements, like "#picture1".
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>Try to develop a more compound class attribute with generic classes - one can consider the way how Bootstrap works, for example giving a forest picture in the center a class of "pictures picture-center picture-landscape".</summary>
+                        ... thus the element can be manipulated through various classes without always being referred to directly.
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary>Use lowercase and kebab-case throughout HTML, for better readability and consistency.</summary>
+                        ...let camelCase belong to Javascript.
+                    </details>
+                </li>
+                <li>Use &#60;h1&#62; on the most important message of the whole page and only ONCE.</li>
+                <li>When the attribute is too long for an element, open a new line for that.</li>
                 <li>Prepare alternatives as fall-back for any form of multimedia rendering.</li>
                 <li>Use labels for every labelable elements for better machine readability and accessibility.</li>
                 <li>Add a title attribute in anchor elements (&#60;a&#62;) and most importantly, give it a meaningful desciption for same reason.</li>
-                <li>Always validate and minify the HTML document.</li>
+                <li>
+                    <details open>
+                        <summary>Always validate and minify the HTML document.</summary>
+                        ...everyone may make mistakes one way or the other. This habit can help proofread your work and ensure the validity of your codes so it won't be just another tag soup in the internet.
+                    </details>
+                </li>
             </ol>
             <p>By all means the above list is not exhaustive and can carry on and on endlessly. There are more to be put into consideration for a good coding practice - however minor and trival those may seem.</p>
             <a href="#top">^ Back to the top</a>
